@@ -6,10 +6,7 @@ feature 'Enter names' do
   # end
 
   scenario 'submitting names' do
-    visit('/')
-    fill_in :p1_name, with: 'Luiza'
-    fill_in :p2_name, with: 'Archie'
-    click_button 'Submit'
+    sign_in_and_play
 
     #save_and_open_page
 
