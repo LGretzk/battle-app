@@ -11,4 +11,5 @@ group :test, :development do
   gem 'sinatra-contrib'
   gem 'rack'
   gem 'capybara'
+  gem 'launchy'
 end

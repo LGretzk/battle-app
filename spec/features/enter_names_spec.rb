@@ -10,6 +10,9 @@ feature 'Enter names' do
     fill_in :p1_name, with: 'Luiza'
     fill_in :p2_name, with: 'Archie'
     click_button 'Submit'
+
+    #save_and_open_page
+
     expect(page).to have_content 'Luiza vs. Archie'
   end
 end
