@@ -1,4 +1,6 @@
-You have just attacked <%= @game.p2.name %> 
+You have just attacked <%= @game.current_turn.name %> 
+
+
 <form action="/play">
   <input type="submit" value="OK">
 </form>
