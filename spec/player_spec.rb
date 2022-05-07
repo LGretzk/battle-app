@@ -17,13 +17,6 @@ describe Player do
     end
   end
 
-  describe '#attack' do
-    it 'damages the player' do
-      expect(archie).to receive(:receive_damage)
-      luiza.attack(archie)
-    end
-  end
-
   describe '#receive damage' do
     it 'reduces the player hit points' do
       expect { luiza.receive_damage }.to change { luiza.hit_points }.by(-10)
